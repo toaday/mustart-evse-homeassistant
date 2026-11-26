@@ -1,0 +1,27 @@
+# --- OEM-derived or unit-specific binaries: NEVER commit (copyright + unit-specific) ---
+*.bin
+*.gz
+*.zip
+live_predump*
+firmware/flash_*/*.bin
+
+# --- Python / tooling ---
+firmware/tools/patchenv/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Raw decompiler output (OEM-derived; the .md docs describe it instead) ---
+firmware/analysis/
+firmware/ghidra_export/
+
+# --- Scratch / captures ---
+firmware/cap.txt
+firmware/*.log
+
+# --- Secrets (ESPHome !secret store) ---
+secrets.yaml
+**/secrets.yaml
+
+# --- Agent-specific / superseded ---
+evse-handoff/CLAUDE.md
